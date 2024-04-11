@@ -1,0 +1,41 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--light-gray);
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: min(320px, calc(100% - 2rem));
+}
+
+.card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card .title {
+    color: var(--dark-blue);
+}
+
+.card p {
+    text-align: center;
+    color: var(--grayish-blue);
+    padding: 0px 1rem;
+}
