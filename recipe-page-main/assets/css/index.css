@@ -1,0 +1,132 @@
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Outfit-VariableFont_wght';
+    src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'YoungSerif-Regular';
+    src: url('../fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+main {
+    font-family: 'Outfit-VariableFont_wght';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--eggshell);
+}
+
+h1, h2 {
+    font-family: 'YoungSerif-Regular';
+    font-weight: 400;
+    color: var(--nutmeg);
+}
+
+.container {
+    background-color: var(--white);
+    padding: 0 1.5rem;
+}
+
+.banner {
+    padding: 0 0;
+    width: 100%;
+    background-size: contain;
+}
+
+.note {
+    background-color: var(--rose-white);
+    padding: 1.5rem;
+}
+
+h3 {
+    margin: 0px !important;
+}
+
+li {
+    padding: 0.5rem 0;
+}
+
+li > span {
+    font-weight: 600;
+}
+
+.text-raspberry {
+    color: var(--dark-raspberry);
+}
+
+.text-nutmeg {
+    color: var(--nutmeg);
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+ol > li::marker {
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+table tr {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+table tr:last-child {
+    border-bottom: 0px ;
+}
+
+table td {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content {
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    main {
+        border-radius: 1rem;
+    }
+
+    .container {
+        max-width: 50%;
+        margin: 100px 0;
+        border-radius: 1rem;
+    }
+    
+    .banner {
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+    }
+}
